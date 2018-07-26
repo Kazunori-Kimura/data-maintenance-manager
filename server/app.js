@@ -7,7 +7,8 @@ const app = express();
 const port = process.env.PORT || 3080;
 
 // DatabaseManagerインスタンスを保持する
-const db = require('./models');
+const DatabaseManager = require('./models');
+const db = new DatabaseManager();
 app.set('db', db);
 
 // body-parserの設定

@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
+const DEFAULT_ITEMS = 20;
 
 class Action {
   /**
@@ -107,7 +108,7 @@ class Action {
           rangeEnd = rangeArr[1];
         }
       }
-      const offset = rangeStart, limit = rangeEnd - rangeStart + 1;
+      const offset = rangeStart, limit = rangeEnd - rangeStart;
 
       // filter={title:'bar'}
       const filter = req.query.filter;
@@ -406,3 +407,5 @@ class Action {
     res.send(res.body);
   }
 }
+
+module.exports = Action;

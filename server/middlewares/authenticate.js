@@ -13,7 +13,7 @@ async function authenticate(req, res, next) {
     let valid = false;
 
     if (token) {
-      const data = jwt.verify(token, process.env.JWT_SIGN_KEY);
+      const data = jwt.verify(token.replace(/^Bearer /, ''), process.env.JWT_SIGN_KEY);
       if (data.user === 'admin') {
         valid = true;
       }
