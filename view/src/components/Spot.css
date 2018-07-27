@@ -1,0 +1,34 @@
+.spot {
+  flex-direction: column;
+  color: #333333;
+}
+header {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header span {
+  width: 30px;
+}
+header h1 {
+  flex: 1;
+  font-size: 14pt;
+}
+.content div {
+  font-size: 11pt;
+  line-height: 1.4rem;
+  margin: 6px 0;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.category label {
+  width: 35vw;
+  height: 24px;
+  font-size: 10pt;
+}
