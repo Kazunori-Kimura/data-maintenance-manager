@@ -1,6 +1,5 @@
 .spot {
   flex-direction: column;
-  color: #333333;
 }
 header {
   height: 40px;
@@ -29,6 +28,6 @@ header h1 {
 }
 .category label {
   width: 35vw;
-  height: 24px;
+  height: 30px;
   font-size: 10pt;
 }
