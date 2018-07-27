@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 });
 
 //
-// 管理画面
+// 画面
 //
 app.use('/', express.static(path.resolve(__dirname, 'views')));
 app.get('/', (req, res) => {
