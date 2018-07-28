@@ -8,7 +8,7 @@ header {
   align-items: center;
 }
 header span {
-  width: 30px;
+  width: 50px;
 }
 header h1 {
   flex: 1;
